@@ -2,3 +2,8 @@ name: run-unit-tests
 
 on: push
 
+jobs:
+
+  build-and-test:
+
+    runs-on: ubuntu-latest
