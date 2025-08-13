@@ -6,7 +6,10 @@ def factorial(n):
     :return: The resultant factorial
     """
     if n < 0:
-        raise ValueError("Only use positive integers.")
+        raise ValueError("Only use non-negative integers.")
+
+    if isinstance(n, str):
+        raise TypeError("Strings are not accepted. Only use integers.")
 
     factorial = 1
     for i in range(1, n + 1):
